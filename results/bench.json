@@ -1,0 +1,35 @@
+{
+ "python": "3.13.18",
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+ "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+ "repeats": 5,
+ "test": {
+  "proposed": {
+   "messages": 861,
+   "seconds": 0.04225992899998232,
+   "ms_per_message": 0.049082379790920234
+  },
+  "baseline": {
+   "messages": 861,
+   "seconds": 0.025199246000063624,
+   "ms_per_message": 0.029267416957100608
+  }
+ },
+ "long": [
+  {
+   "messages": 100,
+   "proposed_ms": 0.06505476000000954,
+   "baseline_ms": 0.04483591999999703
+  },
+  {
+   "messages": 1000,
+   "proposed_ms": 0.06124739199999851,
+   "baseline_ms": 0.047749674000002074
+  },
+  {
+   "messages": 5000,
+   "proposed_ms": 0.060063349599998615,
+   "baseline_ms": 0.0455594430000005
+  }
+ ]
+}
