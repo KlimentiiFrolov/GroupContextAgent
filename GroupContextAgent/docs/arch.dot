@@ -1,0 +1,24 @@
+digraph A {
+  graph [rankdir=TB, nodesep=0.35, ranksep=0.32, fontname="Liberation Serif", bgcolor=white, pad=0.15];
+  node [shape=box, style="rounded,filled", fillcolor=white, color="#333333", fontname="Liberation Serif", fontsize=12, width=3.4, margin="0.15,0.07"];
+  edge [color="#333333", arrowsize=0.8, fontname="Liberation Serif", fontsize=11];
+  in   [label=<Входная реплика m<SUB>t</SUB><BR/><FONT POINT-SIZE="10">автор, текст, доступность</FONT>>];
+  an   [label=<Анализ реплики<BR/><FONT POINT-SIZE="10">обращения, признак запроса, факты</FONT>>];
+  ad   [label=<Оценка адресованности A<SUB>t</SUB><BR/><FONT POINT-SIZE="10">по состоянию графа на момент t</FONT>>];
+  subgraph cluster_g { label=<Состояние группы G<SUB>t</SUB>>; fontname="Liberation Serif"; fontsize=12; style="dashed"; color="#777777"; labelloc=b;
+    gr [label=<Обновление графа E<SUB>t</SUB>>, width=2.3];
+    me [label=<Обновление памяти M<SUB>t</SUB><BR/>и знаний B<SUB>t</SUB>>, width=2.3];
+    hi [label=<История H<SUB>t</SUB>>, width=2.3];
+  }
+  po   [label=<Решение об участии<BR/><FONT POINT-SIZE="10">P<SUB>speak</SUB> ≥ τ ?</FONT>>, shape=box, style="filled", fillcolor="#eef3fb"];
+  ob   [label="Наблюдение\n(ответ не формируется)", width=2.2];
+  cx   [label=<Формирование контекста C<SUB>t</SUB> = Φ(G<SUB>t</SUB>, m<SUB>t</SUB>)>, width=3.0];
+  ge   [label=<Генератор ответа<BR/><FONT POINT-SIZE="10">шаблонный или внешняя LLM</FONT>>, width=3.0];
+  in -> an -> ad;
+  ad -> gr; ad -> me; ad -> hi;
+  gr -> po; me -> po; hi -> po;
+  po -> ob [label=" нет"];
+  po -> cx [label=" да"];
+  cx -> ge;
+  ge -> hi [label=< ответ агента<BR/> добавляется в H<SUB>t</SUB>>, constraint=false, style=dashed];
+}

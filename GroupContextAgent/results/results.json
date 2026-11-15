@@ -1,0 +1,969 @@
+{
+ "tau_dev": {
+  "0.1": 0.9090909090909091,
+  "0.2": 0.9523809523809523,
+  "0.3": 0.9523809523809523,
+  "0.4": 1.0,
+  "0.5": 1.0,
+  "0.6": 1.0,
+  "0.7": 1.0,
+  "0.8": 0.9473684210526316,
+  "0.9": 0.9473684210526316
+ },
+ "tau_test": {
+  "0.1": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9605110336817654,
+   "reply_k": 827,
+   "reply_TP": 120,
+   "reply_FP": 34,
+   "reply_FN": 0,
+   "reply_TN": 707,
+   "reply_precision": 0.7792207792207793,
+   "reply_recall": 1.0,
+   "reply_f1": 0.8759124087591241,
+   "context_acc": 0.8333333333333334,
+   "context_k": 90,
+   "answer_acc": 0.8333333333333334,
+   "answer_k": 90,
+   "leak_n": 0,
+   "n_forbid": 24
+  },
+  "0.2": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.983739837398374,
+   "reply_k": 847,
+   "reply_TP": 120,
+   "reply_FP": 14,
+   "reply_FN": 0,
+   "reply_TN": 727,
+   "reply_precision": 0.8955223880597015,
+   "reply_recall": 1.0,
+   "reply_f1": 0.9448818897637796,
+   "context_acc": 0.8333333333333334,
+   "context_k": 90,
+   "answer_acc": 0.8333333333333334,
+   "answer_k": 90,
+   "leak_n": 0,
+   "n_forbid": 24
+  },
+  "0.3": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9860627177700348,
+   "reply_k": 849,
+   "reply_TP": 120,
+   "reply_FP": 12,
+   "reply_FN": 0,
+   "reply_TN": 729,
+   "reply_precision": 0.9090909090909091,
+   "reply_recall": 1.0,
+   "reply_f1": 0.9523809523809523,
+   "context_acc": 0.8333333333333334,
+   "context_k": 90,
+   "answer_acc": 0.8333333333333334,
+   "answer_k": 90,
+   "leak_n": 0,
+   "n_forbid": 24
+  },
+  "0.4": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9965156794425087,
+   "reply_k": 858,
+   "reply_TP": 117,
+   "reply_FP": 0,
+   "reply_FN": 3,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.975,
+   "reply_f1": 0.9873417721518987,
+   "context_acc": 0.8333333333333334,
+   "context_k": 90,
+   "answer_acc": 0.8333333333333334,
+   "answer_k": 90,
+   "leak_n": 0,
+   "n_forbid": 24
+  },
+  "0.5": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9965156794425087,
+   "reply_k": 858,
+   "reply_TP": 117,
+   "reply_FP": 0,
+   "reply_FN": 3,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.975,
+   "reply_f1": 0.9873417721518987,
+   "context_acc": 0.8333333333333334,
+   "context_k": 90,
+   "answer_acc": 0.8333333333333334,
+   "answer_k": 90,
+   "leak_n": 0,
+   "n_forbid": 24
+  },
+  "0.6": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9953542392566783,
+   "reply_k": 857,
+   "reply_TP": 116,
+   "reply_FP": 0,
+   "reply_FN": 4,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.9666666666666667,
+   "reply_f1": 0.983050847457627,
+   "context_acc": 0.8240740740740741,
+   "context_k": 89,
+   "answer_acc": 0.8240740740740741,
+   "answer_k": 89,
+   "leak_n": 0,
+   "n_forbid": 24
+  },
+  "0.7": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9953542392566783,
+   "reply_k": 857,
+   "reply_TP": 116,
+   "reply_FP": 0,
+   "reply_FN": 4,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.9666666666666667,
+   "reply_f1": 0.983050847457627,
+   "context_acc": 0.8240740740740741,
+   "context_k": 89,
+   "answer_acc": 0.8240740740740741,
+   "answer_k": 89,
+   "leak_n": 0,
+   "n_forbid": 24
+  },
+  "0.8": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9860627177700348,
+   "reply_k": 849,
+   "reply_TP": 108,
+   "reply_FP": 0,
+   "reply_FN": 12,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.9,
+   "reply_f1": 0.9473684210526316,
+   "context_acc": 0.75,
+   "context_k": 81,
+   "answer_acc": 0.75,
+   "answer_k": 81,
+   "leak_n": 0,
+   "n_forbid": 24
+  },
+  "0.9": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.983739837398374,
+   "reply_k": 847,
+   "reply_TP": 106,
+   "reply_FP": 0,
+   "reply_FN": 14,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.8833333333333333,
+   "reply_f1": 0.9380530973451328,
+   "context_acc": 0.75,
+   "context_k": 81,
+   "answer_acc": 0.75,
+   "answer_k": 81,
+   "leak_n": 0,
+   "n_forbid": 24
+  }
+ },
+ "summary": {
+  "baseline": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9303135888501742,
+   "addr_k": 801,
+   "reply_acc": 0.9721254355400697,
+   "reply_k": 837,
+   "reply_TP": 120,
+   "reply_FP": 24,
+   "reply_FN": 0,
+   "reply_TN": 717,
+   "reply_precision": 0.8333333333333334,
+   "reply_recall": 1.0,
+   "reply_f1": 0.9090909090909091,
+   "context_acc": 0.5555555555555556,
+   "context_k": 60,
+   "answer_acc": 0.5555555555555556,
+   "answer_k": 60,
+   "leak_n": 12,
+   "n_forbid": 24
+  },
+  "proposed": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9965156794425087,
+   "reply_k": 858,
+   "reply_TP": 117,
+   "reply_FP": 0,
+   "reply_FN": 3,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.975,
+   "reply_f1": 0.9873417721518987,
+   "context_acc": 0.8333333333333334,
+   "context_k": 90,
+   "answer_acc": 0.8333333333333334,
+   "answer_k": 90,
+   "leak_n": 0,
+   "n_forbid": 24
+  },
+  "no_memory": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9965156794425087,
+   "reply_k": 858,
+   "reply_TP": 117,
+   "reply_FP": 0,
+   "reply_FN": 3,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.975,
+   "reply_f1": 0.9873417721518987,
+   "context_acc": 0.5555555555555556,
+   "context_k": 60,
+   "answer_acc": 0.5555555555555556,
+   "answer_k": 60,
+   "leak_n": 12,
+   "n_forbid": 24
+  },
+  "no_access": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.9988385598141696,
+   "addr_k": 860,
+   "reply_acc": 0.9965156794425087,
+   "reply_k": 858,
+   "reply_TP": 117,
+   "reply_FP": 0,
+   "reply_FN": 3,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.975,
+   "reply_f1": 0.9873417721518987,
+   "context_acc": 0.7222222222222222,
+   "context_k": 78,
+   "answer_acc": 0.7222222222222222,
+   "answer_k": 78,
+   "leak_n": 12,
+   "n_forbid": 24
+  },
+  "no_graph": {
+   "n_messages": 861,
+   "n_eval": 108,
+   "addr_acc": 0.7688734030197445,
+   "addr_k": 662,
+   "reply_acc": 0.9930313588850174,
+   "reply_k": 855,
+   "reply_TP": 114,
+   "reply_FP": 0,
+   "reply_FN": 6,
+   "reply_TN": 741,
+   "reply_precision": 1.0,
+   "reply_recall": 0.95,
+   "reply_f1": 0.9743589743589743,
+   "context_acc": 0.8333333333333334,
+   "context_k": 90,
+   "answer_acc": 0.8333333333333334,
+   "answer_k": 90,
+   "leak_n": 0,
+   "n_forbid": 24
+  }
+ },
+ "dev_summary": {
+  "baseline": {
+   "n_messages": 207,
+   "n_eval": 27,
+   "addr_acc": 0.927536231884058,
+   "addr_k": 192,
+   "reply_acc": 0.9710144927536232,
+   "reply_k": 201,
+   "reply_TP": 30,
+   "reply_FP": 6,
+   "reply_FN": 0,
+   "reply_TN": 171,
+   "reply_precision": 0.8333333333333334,
+   "reply_recall": 1.0,
+   "reply_f1": 0.9090909090909091,
+   "context_acc": 0.7407407407407407,
+   "context_k": 20,
+   "answer_acc": 0.7407407407407407,
+   "answer_k": 20,
+   "leak_n": 3,
+   "n_forbid": 6
+  },
+  "proposed": {
+   "n_messages": 207,
+   "n_eval": 27,
+   "addr_acc": 1.0,
+   "addr_k": 207,
+   "reply_acc": 1.0,
+   "reply_k": 207,
+   "reply_TP": 30,
+   "reply_FP": 0,
+   "reply_FN": 0,
+   "reply_TN": 177,
+   "reply_precision": 1.0,
+   "reply_recall": 1.0,
+   "reply_f1": 1.0,
+   "context_acc": 1.0,
+   "context_k": 27,
+   "answer_acc": 1.0,
+   "answer_k": 27,
+   "leak_n": 0,
+   "n_forbid": 6
+  }
+ },
+ "categories": {
+  "baseline": {
+   "explicit_agent": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": 0.7916666666666666,
+    "n": 93,
+    "n_eval": 24
+   },
+   "explicit_other": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": null,
+    "n": 86,
+    "n_eval": 0
+   },
+   "group_question": {
+    "addr": 1.0,
+    "reply": 0.8666666666666667,
+    "answer": 0.75,
+    "n": 90,
+    "n_eval": 12
+   },
+   "agent_followup": {
+    "addr": 0.8235294117647058,
+    "reply": 1.0,
+    "answer": 0.625,
+    "n": 68,
+    "n_eval": 24
+   },
+   "interleaved_threads": {
+    "addr": 0.5,
+    "reply": 0.875,
+    "answer": null,
+    "n": 96,
+    "n_eval": 0
+   },
+   "private_info": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": 0.5,
+    "n": 99,
+    "n_eval": 24
+   },
+   "fact_update": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": 0.4166666666666667,
+    "n": 128,
+    "n_eval": 12
+   },
+   "long_range": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": 0.0,
+    "n": 201,
+    "n_eval": 12
+   }
+  },
+  "proposed": {
+   "explicit_agent": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": 0.8333333333333334,
+    "n": 93,
+    "n_eval": 24
+   },
+   "explicit_other": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": null,
+    "n": 86,
+    "n_eval": 0
+   },
+   "group_question": {
+    "addr": 0.9888888888888889,
+    "reply": 0.9666666666666667,
+    "answer": 0.75,
+    "n": 90,
+    "n_eval": 12
+   },
+   "agent_followup": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": 0.625,
+    "n": 68,
+    "n_eval": 24
+   },
+   "interleaved_threads": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": null,
+    "n": 96,
+    "n_eval": 0
+   },
+   "private_info": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": 1.0,
+    "n": 99,
+    "n_eval": 24
+   },
+   "fact_update": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": 1.0,
+    "n": 128,
+    "n_eval": 12
+   },
+   "long_range": {
+    "addr": 1.0,
+    "reply": 1.0,
+    "answer": 0.8333333333333334,
+    "n": 201,
+    "n_eval": 12
+   }
+  }
+ },
+ "wilson": {
+  "baseline": {
+   "addr": [
+    0.9113250462090434,
+    0.9454792518265738
+   ],
+   "reply": [
+    0.9588584566980571,
+    0.9811980808228022
+   ],
+   "context": [
+    0.4615344791712406,
+    0.645760123194963
+   ],
+   "answer": [
+    0.4615344791712406,
+    0.645760123194963
+   ]
+  },
+  "proposed": {
+   "addr": [
+    0.9934505151693758,
+    0.9997949531337216
+   ],
+   "reply": [
+    0.9898059981848999,
+    0.9988143457023508
+   ],
+   "context": [
+    0.7518714683136942,
+    0.8918961458835275
+   ],
+   "answer": [
+    0.7518714683136942,
+    0.8918961458835275
+   ]
+  }
+ },
+ "mcnemar": {
+  "addr": {
+   "n01": 60,
+   "n10": 1,
+   "p": 5.377642775528102e-17
+  },
+  "reply": {
+   "n01": 24,
+   "n10": 3,
+   "p": 4.9233436584472656e-05
+  },
+  "answer": {
+   "n01": 30,
+   "n10": 0,
+   "p": 1.862645149230957e-09
+  }
+ },
+ "bootstrap": {
+  "addr_acc": {
+   "diff": 0.06852497096399535,
+   "lo": 0.0397790055248618,
+   "hi": 0.10159118727050187,
+   "p_le0": 0.0
+  },
+  "reply_f1": {
+   "diff": 0.0782508630609896,
+   "lo": 0.04729729729729726,
+   "hi": 0.1153846153846152,
+   "p_le0": 0.0
+  },
+  "answer_acc": {
+   "diff": 0.2777777777777778,
+   "lo": 0.20000000000000007,
+   "hi": 0.36190476190476195,
+   "p_le0": 0.0
+  },
+  "B": 10000,
+  "n_dialogs": 96
+ },
+ "window": {
+  "2": 0.1111111111111111,
+  "4": 0.28703703703703703,
+  "6": 0.4722222222222222,
+  "8": 0.5555555555555556,
+  "12": 0.6018518518518519,
+  "16": 0.6666666666666666,
+  "24": 0.7222222222222222,
+  "32": 0.7222222222222222
+ },
+ "phrasing": {
+  "baseline": {
+   "seen": [
+    35,
+    52
+   ],
+   "unseen": [
+    25,
+    56
+   ]
+  },
+  "proposed": {
+   "seen": [
+    52,
+    52
+   ],
+   "unseen": [
+    38,
+    56
+   ]
+  }
+ },
+ "errors": [
+  {
+   "dialog": "test_explicit_agent_03",
+   "category": "explicit_agent",
+   "message": "m9",
+   "text": "Агент, в каком кабинете встреча?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "кабинет 367"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_explicit_agent_04",
+   "category": "explicit_agent",
+   "message": "m7",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "17:45"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_explicit_agent_05",
+   "category": "explicit_agent",
+   "message": "m5",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "10:15"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_explicit_agent_10",
+   "category": "explicit_agent",
+   "message": "m10",
+   "text": "Агент, в каком кабинете встреча?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "аудитория 507"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_group_question_01",
+   "category": "group_question",
+   "message": "m6",
+   "text": "Все помнят время встречи?",
+   "gold_addr": "ALL",
+   "pred_addr": [
+    "igor"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.5188,
+   "expect": [
+    "14:00"
+   ],
+   "response": "Встреча в 14:00.",
+   "addr_ok": false,
+   "answer_ok": true
+  },
+  {
+   "dialog": "test_group_question_02",
+   "category": "group_question",
+   "message": "m6",
+   "text": "Народ, а встреча к скольки?",
+   "gold_addr": "ALL",
+   "pred_addr": "ALL",
+   "gold_reply": true,
+   "pred_reply": false,
+   "p_speak": 0.3955,
+   "expect": [
+    "12:15"
+   ],
+   "response": "",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_group_question_10",
+   "category": "group_question",
+   "message": "m4",
+   "text": "Народ, а встреча к скольки?",
+   "gold_addr": "ALL",
+   "pred_addr": "ALL",
+   "gold_reply": true,
+   "pred_reply": false,
+   "p_speak": 0.3955,
+   "expect": [
+    "13:00"
+   ],
+   "response": "",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_group_question_11",
+   "category": "group_question",
+   "message": "m6",
+   "text": "Народ, а встреча к скольки?",
+   "gold_addr": "ALL",
+   "pred_addr": "ALL",
+   "gold_reply": true,
+   "pred_reply": false,
+   "p_speak": 0.3955,
+   "expect": [
+    "12:15"
+   ],
+   "response": "",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_agent_followup_01",
+   "category": "agent_followup",
+   "message": "m4",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "10:00"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_agent_followup_02",
+   "category": "agent_followup",
+   "message": "m4",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "15:30"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_agent_followup_03",
+   "category": "agent_followup",
+   "message": "m6",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "15:30"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_agent_followup_03",
+   "category": "agent_followup",
+   "message": "m7",
+   "text": "А в каком кабинете?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.8926,
+   "expect": [
+    "аудитория 329"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_agent_followup_05",
+   "category": "agent_followup",
+   "message": "m6",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "13:30"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_agent_followup_05",
+   "category": "agent_followup",
+   "message": "m7",
+   "text": "А аудитория какая?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9078,
+   "expect": [
+    "кабинет 286"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_agent_followup_08",
+   "category": "agent_followup",
+   "message": "m3",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "14:00"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_agent_followup_11",
+   "category": "agent_followup",
+   "message": "m8",
+   "text": "А в каком кабинете?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.8739,
+   "expect": [
+    "кабинет 426"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_agent_followup_12",
+   "category": "agent_followup",
+   "message": "m4",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "16:45"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_long_range_04",
+   "category": "long_range",
+   "message": "m18",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "13:30"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  },
+  {
+   "dialog": "test_long_range_11",
+   "category": "long_range",
+   "message": "m15",
+   "text": "Агент, к скольки нам подходить?",
+   "gold_addr": [
+    "agent"
+   ],
+   "pred_addr": [
+    "agent"
+   ],
+   "gold_reply": true,
+   "pred_reply": true,
+   "p_speak": 0.9097,
+   "expect": [
+    "15:15"
+   ],
+   "response": "Уточните, пожалуйста, что именно нужно подсказать.",
+   "addr_ok": true,
+   "answer_ok": false
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+digraph M {
+  graph [rankdir=TB, nodesep=0.22, ranksep=0.5, fontname="Liberation Serif", bgcolor=white, pad=0.15, splines=spline];
+  node [shape=box, color="#333333", fontname="Liberation Serif", fontsize=12, style=filled, fillcolor=white, margin="0.1,0.05"];
+  edge [color="#555555", arrowsize=0.7];
+  main [label="main.py\nконсольный запуск"];
+  exp  [label="experiments/\ncorpus, evaluate,\nrun_all, plots"];
+  agent [label="agent.py\nGroupContextAgent", fillcolor="#eef3fb"];
+  baseline [label="baseline.py\nHistoryBaselineAgent"];
+  addr [label="addressivity.py\nоценка A_t"];
+  grph [label="graph.py\nграф E_t"];
+  memory [label="memory.py\nпамять M_t, знания B_t"];
+  policy [label="policy.py\nP_speak, порог τ"];
+  context [label="context.py\nконтекст C_t"];
+  gen [label="generator.py\nгенераторы ответа"];
+  text [label="text.py\nанализ текста"];
+  models [label="models.py\nMessage, Fact, GroupState"];
+  io [label="io.py\nчтение JSON"];
+  {rank=same; main; exp;}
+  {rank=same; agent; baseline;}
+  {rank=same; addr; grph; memory; policy; context; gen;}
+  {rank=same; text; models; io;}
+  main -> agent; main -> baseline; exp -> agent; exp -> baseline; main -> io [style=dashed]; exp -> io [style=dashed];
+  agent -> addr; agent -> grph; agent -> memory; agent -> policy; agent -> context; agent -> gen;
+  baseline -> context; baseline -> gen;
+  addr -> text; context -> text; grph -> models; memory -> models; io -> models [constraint=false];
+}

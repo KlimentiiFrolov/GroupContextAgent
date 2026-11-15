@@ -1,0 +1,75 @@
+{
+ "model": "qwen2.5:1.5b",
+ "base_url": "http://localhost:11434/v1",
+ "temperature": 0.0,
+ "n_dialogs": 24,
+ "started": "2026-11-13 19:13:54",
+ "systems": {
+  "proposed": {
+   "n_messages": 179,
+   "n_eval": 24,
+   "addr_acc": 1.0,
+   "addr_k": 179,
+   "reply_acc": 1.0,
+   "reply_k": 179,
+   "reply_TP": 24,
+   "reply_FP": 0,
+   "reply_FN": 0,
+   "reply_TN": 155,
+   "reply_precision": 1.0,
+   "reply_recall": 1.0,
+   "reply_f1": 1.0,
+   "context_acc": 0.8333333333333334,
+   "context_k": 20,
+   "answer_acc": 0.4166666666666667,
+   "answer_k": 10,
+   "leak_n": 0,
+   "n_forbid": 0,
+   "answer_lenient_k": 14,
+   "answer_lenient_acc": 0.5833333333333334,
+   "answer_wilson": [
+    0.24467347246538232,
+    0.6116566235061137
+   ],
+   "llm_calls": 24,
+   "llm_errors": 0,
+   "llm_seconds": 57.5
+  },
+  "baseline": {
+   "n_messages": 179,
+   "n_eval": 24,
+   "addr_acc": 1.0,
+   "addr_k": 179,
+   "reply_acc": 1.0,
+   "reply_k": 179,
+   "reply_TP": 24,
+   "reply_FP": 0,
+   "reply_FN": 0,
+   "reply_TN": 155,
+   "reply_precision": 1.0,
+   "reply_recall": 1.0,
+   "reply_f1": 1.0,
+   "context_acc": 0.7916666666666666,
+   "context_k": 19,
+   "answer_acc": 0.375,
+   "answer_k": 9,
+   "leak_n": 0,
+   "n_forbid": 0,
+   "answer_lenient_k": 13,
+   "answer_lenient_acc": 0.5416666666666666,
+   "answer_wilson": [
+    0.21159133433631458,
+    0.5729038096209293
+   ],
+   "llm_calls": 24,
+   "llm_errors": 0,
+   "llm_seconds": 51.7
+  }
+ },
+ "mcnemar_answer": {
+  "n01": 1,
+  "n10": 0,
+  "p": 1.0
+ },
+ "finished": "2026-11-13 19:15:43"
+}

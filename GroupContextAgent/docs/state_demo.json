@@ -1,0 +1,114 @@
+{
+  "turn": 12,
+  "participants": [
+    {
+      "id": "anna",
+      "role": "user"
+    },
+    {
+      "id": "boris",
+      "role": "user"
+    },
+    {
+      "id": "sofia",
+      "role": "user"
+    },
+    {
+      "id": "agent",
+      "role": "llm"
+    }
+  ],
+  "history_length": 12,
+  "interaction_graph": {
+    "anna": {
+      "boris": 0.029,
+      "sofia": 0.029,
+      "agent": 0.476
+    },
+    "boris": {
+      "anna": 0.036,
+      "sofia": 0.877,
+      "agent": 0.717
+    },
+    "sofia": {
+      "anna": 0.037,
+      "boris": 0.76,
+      "agent": 0.677
+    },
+    "agent": {
+      "anna": 0.531,
+      "boris": 0.81,
+      "sofia": 0.656
+    }
+  },
+  "memory": [
+    {
+      "fact_id": "meeting_time_v1",
+      "key": "meeting_time",
+      "value": "10:00",
+      "source": "anna",
+      "turn": 1,
+      "version": 1,
+      "visible_to": [
+        "agent",
+        "anna",
+        "boris",
+        "sofia"
+      ],
+      "active": true
+    },
+    {
+      "fact_id": "meeting_place_v1",
+      "key": "meeting_place",
+      "value": "аудитория 305",
+      "source": "anna",
+      "turn": 4,
+      "version": 1,
+      "visible_to": [
+        "agent",
+        "anna",
+        "boris",
+        "sofia"
+      ],
+      "active": true
+    },
+    {
+      "fact_id": "door_code_v1",
+      "key": "door_code",
+      "value": "4512",
+      "source": "anna",
+      "turn": 5,
+      "version": 1,
+      "visible_to": [
+        "agent",
+        "anna"
+      ],
+      "active": true
+    }
+  ],
+  "knowledge": {
+    "anna": [
+      "door_code_v1",
+      "meeting_place_v1",
+      "meeting_time_v1"
+    ],
+    "boris": [
+      "meeting_place_v1",
+      "meeting_time_v1"
+    ],
+    "sofia": [
+      "meeting_place_v1",
+      "meeting_time_v1"
+    ],
+    "agent": [
+      "door_code_v1",
+      "meeting_place_v1",
+      "meeting_time_v1"
+    ]
+  },
+  "addressivity": {
+    "anna": 0.019,
+    "boris": 0.742,
+    "agent": 0.108
+  }
+}

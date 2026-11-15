@@ -1,0 +1,142 @@
+{
+ "bootstrap": {
+  "addr_acc": {
+   "diff": 0.06736353077816493,
+   "lo": 0.038724373576309756,
+   "hi": 0.10036275695284158,
+   "p_le0": 0.0
+  },
+  "reply_f1": {
+   "diff": 0.0782508630609896,
+   "lo": 0.04729729729729726,
+   "hi": 0.1153846153846152,
+   "p_le0": 0.0
+  },
+  "answer_acc": {
+   "diff": 0.18518518518518517,
+   "lo": 0.10909090909090902,
+   "hi": 0.2647058823529411,
+   "p_le0": 0.0
+  },
+  "B": 10000,
+  "n_dialogs": 96
+ },
+ "mcnemar_answer": {
+  "n01": 23,
+  "n10": 3,
+  "p": 8.797645568847656e-05
+ },
+ "core": {
+  "baseline": [
+   65,
+   108
+  ],
+  "proposed": [
+   92,
+   108
+  ]
+ },
+ "categories": {
+  "explicit_agent": {
+   "baseline": [
+    11,
+    24
+   ],
+   "proposed": [
+    12,
+    24
+   ]
+  },
+  "group_question": {
+   "baseline": [
+    5,
+    12
+   ],
+   "proposed": [
+    4,
+    12
+   ]
+  },
+  "agent_followup": {
+   "baseline": [
+    12,
+    24
+   ],
+   "proposed": [
+    12,
+    24
+   ]
+  },
+  "private_info": {
+   "baseline": [
+    12,
+    24
+   ],
+   "proposed": [
+    23,
+    24
+   ]
+  },
+  "fact_update": {
+   "baseline": [
+    5,
+    12
+   ],
+   "proposed": [
+    8,
+    12
+   ]
+  },
+  "long_range": {
+   "baseline": [
+    0,
+    12
+   ],
+   "proposed": [
+    6,
+    12
+   ]
+  }
+ },
+ "first24": {
+  "baseline": [
+   11,
+   24
+  ],
+  "proposed": [
+   12,
+   24
+  ]
+ },
+ "context_ok_answer_wrong": [
+  {
+   "dialog": "test_private_info_01",
+   "category": "private_info",
+   "text": "Агент, напомни код от двери.",
+   "expect": [
+    "9486"
+   ],
+   "response": "Код от двери 1234. Если нужно изменить или если это было другое число, сообщите мне."
+  },
+  {
+   "dialog": "test_fact_update_02",
+   "category": "fact_update",
+   "text": "Агент, во сколько и где собираемся?",
+   "expect": [
+    "12:45",
+    "аудитория 497"
+   ],
+   "response": "Сбор через 1 час и 15 минут в аудитории 497."
+  },
+  {
+   "dialog": "test_long_range_02",
+   "category": "long_range",
+   "text": "Агент, во сколько и где собираемся?",
+   "expect": [
+    "11:15",
+    "кабинет 107"
+   ],
+   "response": "Сбор через 15 минут в кабинете 107."
+  }
+ ]
+}
