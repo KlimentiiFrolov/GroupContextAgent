@@ -1,0 +1,145 @@
+{
+ "baseline": {
+  "n_eval": 108,
+  "answer_k": 33,
+  "lenient_k": 46,
+  "core_k": 53,
+  "context_k": 59,
+  "answer_wilson": [
+   0.22660104620023352,
+   0.3978678455180537
+  ],
+  "private_leak": [
+   24,
+   24
+  ],
+  "stale": [
+   0,
+   12
+  ],
+  "addr_acc": 0.9314750290360047,
+  "reply_f1": 0.9090909090909091
+ },
+ "proposed_saved": {
+  "n_eval": 108,
+  "answer_k": 55,
+  "lenient_k": 70,
+  "core_k": 82,
+  "context_k": 90,
+  "answer_wilson": [
+   0.4162897139617787,
+   0.6015927197659219
+  ],
+  "private_leak": [
+   11,
+   24
+  ],
+  "stale": [
+   0,
+   12
+  ],
+  "addr_acc": 0.9988385598141696,
+  "reply_f1": 0.9873417721518987
+ },
+ "changed_requests": [
+  [
+   "test_private_info_01",
+   "m6"
+  ],
+  [
+   "test_private_info_02",
+   "m9"
+  ],
+  [
+   "test_private_info_03",
+   "m11"
+  ],
+  [
+   "test_private_info_04",
+   "m7"
+  ],
+  [
+   "test_private_info_05",
+   "m9"
+  ],
+  [
+   "test_private_info_06",
+   "m7"
+  ],
+  [
+   "test_private_info_07",
+   "m8"
+  ],
+  [
+   "test_private_info_08",
+   "m10"
+  ],
+  [
+   "test_private_info_09",
+   "m9"
+  ],
+  [
+   "test_private_info_10",
+   "m8"
+  ],
+  [
+   "test_private_info_11",
+   "m8"
+  ],
+  [
+   "test_private_info_12",
+   "m7"
+  ]
+ ],
+ "proposed_saved_on_changed": {
+  "n": 12,
+  "leak": 11
+ },
+ "baseline_unchanged": {
+  "n_eval": 96,
+  "answer_k": 33,
+  "lenient_k": 46,
+  "core_k": 53,
+  "context_k": 48,
+  "answer_wilson": [
+   0.2564024884934557,
+   0.4431215575955494
+  ],
+  "private_leak": [
+   12,
+   12
+  ],
+  "stale": [
+   0,
+   12
+  ],
+  "addr_acc": 0.9314750290360047,
+  "reply_f1": 0.9090909090909091
+ },
+ "proposed_unchanged": {
+  "n_eval": 96,
+  "answer_k": 54,
+  "lenient_k": 69,
+  "core_k": 81,
+  "context_k": 78,
+  "answer_wilson": [
+   0.46275702045593164,
+   0.6574333611084665
+  ],
+  "private_leak": [
+   0,
+   12
+  ],
+  "stale": [
+   0,
+   12
+  ],
+  "addr_acc": 0.9988385598141696,
+  "reply_f1": 0.9873417721518987
+ },
+ "mcnemar_unchanged": {
+  "n01": 23,
+  "n10": 2,
+  "p": 1.9431114196777344e-05
+ }
+}

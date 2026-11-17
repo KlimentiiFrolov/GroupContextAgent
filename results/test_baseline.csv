@@ -437,7 +437,7 @@ test_private_info_01,private_info,m2,dmitry,Презентацию почти д
 test_private_info_01,private_info,m3,olga,Я сегодня немного опоздаю.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_01,private_info,m4,dmitry,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""9486""]",False,False,True,Код от двери: 9486.
 test_private_info_01,private_info,m5,igor,Слайды выложу вечером.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
-test_private_info_01,private_info,m6,olga,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""9486""]",[],True,True,False,Код от двери: 9486.
+test_private_info_01,private_info,m6,olga,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""9486""]",False,False,True,Код от двери: 9486.
 test_private_info_02,private_info,m1,maxim,"Агент, запиши: код от двери 4129.","[""agent""]","[""agent""]",True,True,True,1.0,False,[],[],False,False,False,Запомнил.
 test_private_info_02,private_info,m2,igor,"Дмитрий, сможешь распечатать раздаточный материал?","[""dmitry""]","[""dmitry""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_02,private_info,m3,dmitry,"Смогу, без проблем.","[""igor""]","[""igor""]",True,False,False,0.0,False,[],[],False,False,False,
@@ -446,7 +446,7 @@ test_private_info_02,private_info,m5,igor,"Агент, как попасть в�
 test_private_info_02,private_info,m6,igor,"София, сможешь распечатать раздаточный материал?","[""sofia""]","[""sofia""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_02,private_info,m7,sofia,"Смогу, без проблем.","[""igor""]","[""igor""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_02,private_info,m8,dmitry,Я сегодня немного опоздаю.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
-test_private_info_02,private_info,m9,maxim,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""4129""]",[],True,True,False,Код от двери: 4129.
+test_private_info_02,private_info,m9,maxim,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""4129""]",False,False,True,Код от двери: 4129.
 test_private_info_03,private_info,m1,sofia,"Анна, ты отправил отчёт?","[""anna""]","[""anna""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_03,private_info,m2,anna,"Ещё нет, вечером отправлю.","[""sofia""]","[""sofia""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_03,private_info,m3,anna,"Агент, запиши: код от двери 5840.","[""agent""]","[""agent""]",True,True,True,1.0,False,[],[],False,False,False,Запомнил.
@@ -457,14 +457,14 @@ test_private_info_03,private_info,m7,anna,"Смогу, без проблем.","
 test_private_info_03,private_info,m8,sofia,Слайды выложу вечером.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_03,private_info,m9,dmitry,"Агент, какой код от двери?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""5840""]",False,False,True,Код от двери: 5840.
 test_private_info_03,private_info,m10,anna,Сегодня очень много дел.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
-test_private_info_03,private_info,m11,anna,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""5840""]",[],True,True,False,Код от двери: 5840.
+test_private_info_03,private_info,m11,anna,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""5840""]",False,False,True,Код от двери: 5840.
 test_private_info_04,private_info,m1,igor,Слайды выложу вечером.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_04,private_info,m2,maxim,"Агент, запиши: код от двери 5065.","[""agent""]","[""agent""]",True,True,True,1.0,False,[],[],False,False,False,Запомнил.
 test_private_info_04,private_info,m3,sofia,Сегодня очень много дел.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_04,private_info,m4,olga,"Максим, ты отправил отчёт?","[""maxim""]","[""maxim""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_04,private_info,m5,maxim,"Ещё нет, вечером отправлю.","[""olga""]","[""olga""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_04,private_info,m6,olga,"Агент, какой код от двери?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""5065""]",False,False,True,Код от двери: 5065.
-test_private_info_04,private_info,m7,maxim,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""5065""]",[],True,True,False,Код от двери: 5065.
+test_private_info_04,private_info,m7,maxim,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""5065""]",False,False,True,Код от двери: 5065.
 test_private_info_05,private_info,m1,anna,Погода сегодня отличная.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_05,private_info,m2,igor,Кофе в автомате опять закончился.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_05,private_info,m3,igor,"Агент, запомни: код от двери 6068.","[""agent""]","[""agent""]",True,True,True,1.0,False,[],[],False,False,False,Запомнил.
@@ -473,14 +473,14 @@ test_private_info_05,private_info,m5,anna,Я сегодня немного оп�
 test_private_info_05,private_info,m6,igor,"Анна, сможешь распечатать раздаточный материал?","[""anna""]","[""anna""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_05,private_info,m7,anna,"Смогу, без проблем.","[""igor""]","[""igor""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_05,private_info,m8,olga,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""6068""]",False,False,True,Код от двери: 6068.
-test_private_info_05,private_info,m9,igor,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""6068""]",[],True,True,False,Код от двери: 6068.
+test_private_info_05,private_info,m9,igor,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""6068""]",False,False,True,Код от двери: 6068.
 test_private_info_06,private_info,m1,sofia,"Агент, запомни: код от двери 6930.","[""agent""]","[""agent""]",True,True,True,1.0,False,[],[],False,False,False,Запомнил.
 test_private_info_06,private_info,m2,maria,Сегодня очень много дел.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_06,private_info,m3,dmitry,Я сегодня немного опоздаю.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_06,private_info,m4,maxim,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""6930""]",False,False,True,Код от двери: 6930.
 test_private_info_06,private_info,m5,maxim,"Мария, ты отправил отчёт?","[""maria""]","[""maria""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_06,private_info,m6,maria,"Ещё нет, вечером отправлю.","[""maxim""]","[""maxim""]",True,False,False,0.0,False,[],[],False,False,False,
-test_private_info_06,private_info,m7,sofia,"Агент, какой код от двери?","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""6930""]",[],True,True,False,Код от двери: 6930.
+test_private_info_06,private_info,m7,sofia,"Агент, какой код от двери?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""6930""]",False,False,True,Код от двери: 6930.
 test_private_info_07,private_info,m1,elena,Я сегодня немного опоздаю.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_07,private_info,m2,sofia,"Агент, запиши: код от двери 6178.","[""agent""]","[""agent""]",True,True,True,1.0,False,[],[],False,False,False,Запомнил.
 test_private_info_07,private_info,m3,elena,Надо будет купить маркеры.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
@@ -488,7 +488,7 @@ test_private_info_07,private_info,m4,sofia,Слайды выложу вечер�
 test_private_info_07,private_info,m5,dmitry,"Елена, сможешь распечатать раздаточный материал?","[""elena""]","[""elena""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_07,private_info,m6,elena,"Смогу, без проблем.","[""dmitry""]","[""dmitry""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_07,private_info,m7,elena,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""6178""]",False,False,True,Код от двери: 6178.
-test_private_info_07,private_info,m8,sofia,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""6178""]",[],True,True,False,Код от двери: 6178.
+test_private_info_07,private_info,m8,sofia,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""6178""]",False,False,True,Код от двери: 6178.
 test_private_info_08,private_info,m1,elena,"Игорь, ты успеваешь со слайдами?","[""igor""]","[""igor""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_08,private_info,m2,igor,"Почти, осталось два слайда.","[""elena""]","[""elena""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_08,private_info,m3,igor,Презентацию почти доделал.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
@@ -498,7 +498,7 @@ test_private_info_08,private_info,m6,igor,Погода сегодня отлич
 test_private_info_08,private_info,m7,elena,Черновик отчёта готов наполовину.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_08,private_info,m8,igor,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""3530""]",False,False,True,Код от двери: 3530.
 test_private_info_08,private_info,m9,boris,Сейчас посмотрю расписание.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
-test_private_info_08,private_info,m10,boris,"Агент, какой код от двери?","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""3530""]",[],True,True,False,Код от двери: 3530.
+test_private_info_08,private_info,m10,boris,"Агент, какой код от двери?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""3530""]",False,False,True,Код от двери: 3530.
 test_private_info_09,private_info,m1,dmitry,Надо будет купить маркеры.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_09,private_info,m2,maxim,"Дмитрий, ты успеваешь со слайдами?","[""dmitry""]","[""dmitry""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_09,private_info,m3,dmitry,"Почти, осталось два слайда.","[""maxim""]","[""maxim""]",True,False,False,0.0,False,[],[],False,False,False,
@@ -507,7 +507,7 @@ test_private_info_09,private_info,m5,dmitry,"Код проекта уже соб
 test_private_info_09,private_info,m6,maxim,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""9793""]",False,False,True,Код от двери: 9793.
 test_private_info_09,private_info,m7,dmitry,Слайды выложу вечером.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_09,private_info,m8,anna,Я сегодня немного опоздаю.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
-test_private_info_09,private_info,m9,dmitry,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""9793""]",[],True,True,False,Код от двери: 9793.
+test_private_info_09,private_info,m9,dmitry,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""9793""]",False,False,True,Код от двери: 9793.
 test_private_info_10,private_info,m1,maxim,"Отличная идея, поддерживаю.",ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_10,private_info,m2,anna,"Агент, запомни: код от двери 3160.","[""agent""]","[""agent""]",True,True,True,1.0,False,[],[],False,False,False,Запомнил.
 test_private_info_10,private_info,m3,maxim,"Анна, ты отправил отчёт?","[""anna""]","[""anna""]",True,False,False,0.0,False,[],[],False,False,False,
@@ -515,7 +515,7 @@ test_private_info_10,private_info,m4,anna,"Ещё нет, вечером отп�
 test_private_info_10,private_info,m5,elena,Сегодня очень много дел.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_10,private_info,m6,elena,"Агент, какой код от двери?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""3160""]",False,False,True,Код от двери: 3160.
 test_private_info_10,private_info,m7,elena,Кофе в автомате опять закончился.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
-test_private_info_10,private_info,m8,anna,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""3160""]",[],True,True,False,Код от двери: 3160.
+test_private_info_10,private_info,m8,anna,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""3160""]",False,False,True,Код от двери: 3160.
 test_private_info_11,private_info,m1,maxim,"Агент, запомни: код от двери 7840.","[""agent""]","[""agent""]",True,True,True,1.0,False,[],[],False,False,False,Запомнил.
 test_private_info_11,private_info,m2,anna,Сегодня очень много дел.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_11,private_info,m3,maxim,Надо будет купить маркеры.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
@@ -523,14 +523,14 @@ test_private_info_11,private_info,m4,anna,"Агент, какой код от д
 test_private_info_11,private_info,m5,anna,"Максим, ты успеваешь со слайдами?","[""maxim""]","[""maxim""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_11,private_info,m6,maxim,"Почти, осталось два слайда.","[""anna""]","[""anna""]",True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_11,private_info,m7,maria,Я пока в дороге.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
-test_private_info_11,private_info,m8,maxim,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""7840""]",[],True,True,False,Код от двери: 7840.
+test_private_info_11,private_info,m8,maxim,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""7840""]",False,False,True,Код от двери: 7840.
 test_private_info_12,private_info,m1,elena,Я сегодня немного опоздаю.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_12,private_info,m2,elena,"Код проекта уже собрал, всё работает.",ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_12,private_info,m3,maxim,"Агент, запиши: код от двери 6705.","[""agent""]","[""agent""]",True,True,True,1.0,False,[],[],False,False,False,Запомнил.
 test_private_info_12,private_info,m4,elena,"Отличная идея, поддерживаю.",ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_12,private_info,m5,olga,Надо будет купить маркеры.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_private_info_12,private_info,m6,olga,"Агент, напомни код от двери.","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""6705""]",False,False,True,Код от двери: 6705.
-test_private_info_12,private_info,m7,maxim,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,"[""6705""]",[],True,True,False,Код от двери: 6705.
+test_private_info_12,private_info,m7,maxim,"Агент, как попасть внутрь, какой там код?","[""agent""]","[""agent""]",True,True,True,1.0,True,[],"[""6705""]",False,False,True,Код от двери: 6705.
 test_fact_update_01,fact_update,m1,sofia,Собираемся в 13:30 в кабинете 360.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_fact_update_01,fact_update,m2,igor,Слайды выложу вечером.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,
 test_fact_update_01,fact_update,m3,igor,Я пока в дороге.,ALL,ALL,True,False,False,0.0,False,[],[],False,False,False,

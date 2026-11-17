@@ -32,6 +32,10 @@ class Message:
     def visible(self, pid: str) -> bool:
         return self.visible_to is None or pid in self.visible_to
 
+    def visible_all(self, audience) -> bool:
+        """Реплику видели все участники audience."""
+        return self.visible_to is None or set(audience) <= self.visible_to
+
 
 @dataclass
 class Fact:
@@ -70,6 +74,10 @@ class GroupState:
 
     def present(self) -> frozenset[str]:
         return frozenset(self.participants)
+
+    def audience(self, msg: "Message") -> frozenset[str]:
+        """Аудитория реплики и ответа на неё: получатели закрытого сообщения или все участники."""
+        return msg.visible_to if msg.visible_to is not None else self.present()
 
     def humans(self) -> list[str]:
         return [p for p, v in self.participants.items() if not v.is_agent]

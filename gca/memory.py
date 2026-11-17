@@ -28,11 +28,14 @@ def update(state: GroupState, msg: Message, facts: dict[str, str]) -> list[Fact]
     return added
 
 
-def accessible(state: GroupState, user: str, keys: list[str], check_access: bool = True) -> dict[str, Fact]:
-    """Актуальные версии фактов по ключам, доступные участнику user (B_user)."""
+def accessible(state: GroupState, audience, keys: list[str], check_access: bool = True) -> dict[str, Fact]:
+    """Актуальные версии фактов по ключам, доступные каждому, кто увидит ответ (пересечение B_u по u из audience)."""
+    if isinstance(audience, str):
+        audience = {audience}
+    audience = set(audience)
     result = {}
     for key in keys:
-        versions = [f for f in state.memory if f.key == key and (not check_access or user in f.visible_to)]
+        versions = [f for f in state.memory if f.key == key and (not check_access or audience <= f.visible_to)]
         if not versions:
             continue
         active = [f for f in versions if f.active] or versions

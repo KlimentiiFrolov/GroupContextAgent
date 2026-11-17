@@ -16,42 +16,50 @@
    "n_eval": 108,
    "addr_acc": 0.9988385598141696,
    "addr_k": 860,
-   "reply_acc": 0.9605110336817654,
-   "reply_k": 827,
+   "reply_acc": 0.9628339140534262,
+   "reply_k": 829,
    "reply_TP": 120,
-   "reply_FP": 34,
+   "reply_FP": 32,
    "reply_FN": 0,
-   "reply_TN": 707,
-   "reply_precision": 0.7792207792207793,
+   "reply_TN": 709,
+   "reply_precision": 0.7894736842105263,
    "reply_recall": 1.0,
-   "reply_f1": 0.8759124087591241,
+   "reply_f1": 0.8823529411764706,
    "context_acc": 0.8333333333333334,
    "context_k": 90,
    "answer_acc": 0.8333333333333334,
    "answer_k": 90,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "0.2": {
    "n_messages": 861,
    "n_eval": 108,
    "addr_acc": 0.9988385598141696,
    "addr_k": 860,
-   "reply_acc": 0.983739837398374,
-   "reply_k": 847,
+   "reply_acc": 0.9860627177700348,
+   "reply_k": 849,
    "reply_TP": 120,
-   "reply_FP": 14,
+   "reply_FP": 12,
    "reply_FN": 0,
-   "reply_TN": 727,
-   "reply_precision": 0.8955223880597015,
+   "reply_TN": 729,
+   "reply_precision": 0.9090909090909091,
    "reply_recall": 1.0,
-   "reply_f1": 0.9448818897637796,
+   "reply_f1": 0.9523809523809523,
    "context_acc": 0.8333333333333334,
    "context_k": 90,
    "answer_acc": 0.8333333333333334,
    "answer_k": 90,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "0.3": {
    "n_messages": 861,
@@ -72,7 +80,11 @@
    "answer_acc": 0.8333333333333334,
    "answer_k": 90,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "0.4": {
    "n_messages": 861,
@@ -93,7 +105,11 @@
    "answer_acc": 0.8333333333333334,
    "answer_k": 90,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "0.5": {
    "n_messages": 861,
@@ -114,7 +130,11 @@
    "answer_acc": 0.8333333333333334,
    "answer_k": 90,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "0.6": {
    "n_messages": 861,
@@ -135,7 +155,11 @@
    "answer_acc": 0.8240740740740741,
    "answer_k": 89,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "0.7": {
    "n_messages": 861,
@@ -156,7 +180,11 @@
    "answer_acc": 0.8240740740740741,
    "answer_k": 89,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "0.8": {
    "n_messages": 861,
@@ -177,7 +205,11 @@
    "answer_acc": 0.75,
    "answer_k": 81,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "0.9": {
    "n_messages": 861,
@@ -198,7 +230,11 @@
    "answer_acc": 0.75,
    "answer_k": 81,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   }
  },
  "summary": {
@@ -216,12 +252,16 @@
    "reply_precision": 0.8333333333333334,
    "reply_recall": 1.0,
    "reply_f1": 0.9090909090909091,
-   "context_acc": 0.5555555555555556,
-   "context_k": 60,
-   "answer_acc": 0.5555555555555556,
-   "answer_k": 60,
-   "leak_n": 12,
-   "n_forbid": 24
+   "context_acc": 0.4444444444444444,
+   "context_k": 48,
+   "answer_acc": 0.4444444444444444,
+   "answer_k": 48,
+   "leak_n": 24,
+   "n_forbid": 36,
+   "private_leak_n": 24,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "proposed": {
    "n_messages": 861,
@@ -242,7 +282,11 @@
    "answer_acc": 0.8333333333333334,
    "answer_k": 90,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "no_memory": {
    "n_messages": 861,
@@ -258,12 +302,16 @@
    "reply_precision": 1.0,
    "reply_recall": 0.975,
    "reply_f1": 0.9873417721518987,
-   "context_acc": 0.5555555555555556,
-   "context_k": 60,
-   "answer_acc": 0.5555555555555556,
-   "answer_k": 60,
-   "leak_n": 12,
-   "n_forbid": 24
+   "context_acc": 0.6666666666666666,
+   "context_k": 72,
+   "answer_acc": 0.6666666666666666,
+   "answer_k": 72,
+   "leak_n": 0,
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "no_access": {
    "n_messages": 861,
@@ -279,12 +327,16 @@
    "reply_precision": 1.0,
    "reply_recall": 0.975,
    "reply_f1": 0.9873417721518987,
-   "context_acc": 0.7222222222222222,
-   "context_k": 78,
-   "answer_acc": 0.7222222222222222,
-   "answer_k": 78,
-   "leak_n": 12,
-   "n_forbid": 24
+   "context_acc": 0.6111111111111112,
+   "context_k": 66,
+   "answer_acc": 0.6111111111111112,
+   "answer_k": 66,
+   "leak_n": 24,
+   "n_forbid": 36,
+   "private_leak_n": 24,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   },
   "no_graph": {
    "n_messages": 861,
@@ -305,7 +357,11 @@
    "answer_acc": 0.8333333333333334,
    "answer_k": 90,
    "leak_n": 0,
-   "n_forbid": 24
+   "n_forbid": 36,
+   "private_leak_n": 0,
+   "n_private": 24,
+   "stale_n": 0,
+   "n_stale": 12
   }
  },
  "dev_summary": {
@@ -323,12 +379,16 @@
    "reply_precision": 0.8333333333333334,
    "reply_recall": 1.0,
    "reply_f1": 0.9090909090909091,
-   "context_acc": 0.7407407407407407,
-   "context_k": 20,
-   "answer_acc": 0.7407407407407407,
-   "answer_k": 20,
-   "leak_n": 3,
-   "n_forbid": 6
+   "context_acc": 0.6296296296296297,
+   "context_k": 17,
+   "answer_acc": 0.6296296296296297,
+   "answer_k": 17,
+   "leak_n": 6,
+   "n_forbid": 9,
+   "private_leak_n": 6,
+   "n_private": 6,
+   "stale_n": 0,
+   "n_stale": 3
   },
   "proposed": {
    "n_messages": 207,
@@ -349,7 +409,11 @@
    "answer_acc": 1.0,
    "answer_k": 27,
    "leak_n": 0,
-   "n_forbid": 6
+   "n_forbid": 9,
+   "private_leak_n": 0,
+   "n_private": 6,
+   "stale_n": 0,
+   "n_stale": 3
   }
  },
  "categories": {
@@ -392,7 +456,7 @@
    "private_info": {
     "addr": 1.0,
     "reply": 1.0,
-    "answer": 0.5,
+    "answer": 0.0,
     "n": 99,
     "n_eval": 24
    },
@@ -481,12 +545,12 @@
     0.9811980808228022
    ],
    "context": [
-    0.4615344791712406,
-    0.645760123194963
+    0.3542398768050369,
+    0.5384655208287593
    ],
    "answer": [
-    0.4615344791712406,
-    0.645760123194963
+    0.3542398768050369,
+    0.5384655208287593
    ]
   },
   "proposed": {
@@ -520,9 +584,9 @@
    "p": 4.9233436584472656e-05
   },
   "answer": {
-   "n01": 30,
+   "n01": 42,
    "n10": 0,
-   "p": 1.862645149230957e-09
+   "p": 4.547473508864641e-13
   }
  },
  "bootstrap": {
@@ -539,32 +603,32 @@
    "p_le0": 0.0
   },
   "answer_acc": {
-   "diff": 0.2777777777777778,
-   "lo": 0.20000000000000007,
-   "hi": 0.36190476190476195,
+   "diff": 0.38888888888888895,
+   "lo": 0.27884615384615385,
+   "hi": 0.5089285714285714,
    "p_le0": 0.0
   },
   "B": 10000,
   "n_dialogs": 96
  },
  "window": {
-  "2": 0.1111111111111111,
-  "4": 0.28703703703703703,
-  "6": 0.4722222222222222,
-  "8": 0.5555555555555556,
-  "12": 0.6018518518518519,
-  "16": 0.6666666666666666,
-  "24": 0.7222222222222222,
-  "32": 0.7222222222222222
+  "2": 0.2222222222222222,
+  "4": 0.37962962962962965,
+  "6": 0.4166666666666667,
+  "8": 0.4444444444444444,
+  "12": 0.49074074074074076,
+  "16": 0.5555555555555556,
+  "24": 0.6111111111111112,
+  "32": 0.6111111111111112
  },
  "phrasing": {
   "baseline": {
    "seen": [
-    35,
+    29,
     52
    ],
    "unseen": [
-    25,
+    19,
     56
    ]
   },

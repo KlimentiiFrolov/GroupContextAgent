@@ -28,8 +28,12 @@ class Context:
         )
 
 
-def build(state: GroupState, msg: Message, addressees, facts: dict[str, str], n_recent: int = 4) -> Context:
+def build(state: GroupState, msg: Message, addressees, facts: dict[str, str], n_recent: int = 4,
+          audience=None) -> Context:
+    """audience — все, кто увидит ответ: в последние реплики попадают только сообщения, которые видел каждый из них.
+    Без audience (базовый подход) берутся реплики, видимые автору."""
     names = state.participants
-    recent = [f"{names[m.speaker].name}: {m.text}" for m in state.history[-n_recent:] if m.visible(msg.speaker)]
+    seen = (lambda m: m.visible_all(audience)) if audience is not None else (lambda m: m.visible(msg.speaker))
+    recent = [f"{names[m.speaker].name}: {m.text}" for m in state.history[-n_recent:] if seen(m)]
     adr = ["вся группа"] if addressees == ALL else [names[a].name for a in sorted(addressees)]
     return Context(names[msg.speaker].name, adr, msg.text, T.requested_keys(msg.text), facts, recent)

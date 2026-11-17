@@ -63,10 +63,25 @@ def test_implicit_reply_in_interleaved_threads():
 def test_private_fact_not_disclosed():
     a = GroupContextAgent(PS)
     r = feed(a, ("anna", "Агент, запомни: код от двери 4512.", ["anna", "agent"]),
-             ("boris", "Агент, какой код от двери?"), ("anna", "Агент, напомни код от двери."))
+             ("boris", "Агент, какой код от двери?"), ("anna", "Агент, напомни код от двери."),
+             ("anna", "Агент, напомни код от двери.", ["anna", "agent"]))
     assert "4512" not in r[1].response
-    assert "4512" in r[2].response
+    # Анна знает код, но спрашивает в общем чате: ответ увидят все, код называть нельзя
+    assert r[2].reply and "4512" not in r[2].response
+    assert all("4512" not in line for line in r[2].context.recent)
+    # тот же вопрос в закрытом сообщении — код называется
+    assert "4512" in r[3].response
     assert "door_code_v1" in a.state.knowledge["anna"] and "door_code_v1" not in a.state.knowledge["boris"]
+
+
+def test_access_checked_without_memory():
+    # вариант без памяти проверяет права так же, как полный метод
+    a = GroupContextAgent(PS, AgentConfig(use_memory=False))
+    r = feed(a, ("anna", "Агент, запомни: код от двери 4512.", ["anna", "agent"]),
+             ("boris", "Агент, какой код от двери?"), ("anna", "Агент, напомни код от двери."),
+             ("anna", "Агент, напомни код от двери.", ["anna", "agent"]))
+    assert "4512" not in r[1].response and "4512" not in r[2].response
+    assert "4512" in r[3].response
 
 
 def test_baseline_leaks_private_fact():

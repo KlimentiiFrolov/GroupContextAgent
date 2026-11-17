@@ -33,11 +33,12 @@ class StepResult:
     response: Optional[str] = None
 
 
-def facts_from_window(history: list[Message], viewer: str, keys: list[str], k: int) -> dict[str, str]:
-    """Поиск фактов только в последних k репликах, доступных наблюдателю (без структурированной памяти)."""
+def facts_from_window(history: list[Message], viewer, keys: list[str], k: int) -> dict[str, str]:
+    """Поиск фактов только в последних k репликах (без структурированной памяти).
+    viewer — один участник (str) или множество участников: реплика учитывается, если её видели все они."""
     found: dict[str, str] = {}
     for m in history[-k:]:
-        if m.visible(viewer):
+        if (m.visible(viewer) if isinstance(viewer, str) else m.visible_all(viewer)):
             for key, value in T.extract_facts(m.text).items():
                 if key in keys:
                     found[key] = value
@@ -83,7 +84,7 @@ class GroupContextAgent:
         res = StepResult(msg.id, addressees, scores, p, p >= cfg.policy.tau)
         # 8. формирование контекста и ответа
         if res.reply:
-            res.context = build(st, msg, addressees, available)
+            res.context = build(st, msg, addressees, available, audience=st.audience(msg) if cfg.use_access else None)
             res.response = self.generator.generate(res.context)
             self._register_reply(msg, res.response)
         self.log.append(res)
@@ -93,9 +94,11 @@ class GroupContextAgent:
         cfg = self.config
         if not keys:
             return {}
+        # ответ увидят все получатели реплики, поэтому права проверяются для каждого из них
+        audience = self.state.audience(msg) if cfg.use_access else {self.agent_id}
         if not cfg.use_memory:
-            return facts_from_window(self.state.history[:-1] + [msg], self.agent_id, keys, cfg.history_window)
-        return {k: f.value for k, f in MEM.accessible(self.state, msg.speaker, keys, cfg.use_access).items()}
+            return facts_from_window(self.state.history[:-1] + [msg], audience, keys, cfg.history_window)
+        return {k: f.value for k, f in MEM.accessible(self.state, audience, keys, cfg.use_access).items()}
 
     def _register_reply(self, msg: Message, text: str) -> None:
         reply = Message(f"{msg.id}_r", self.agent_id, text, visible_to=msg.visible_to, reply_to=msg.id)

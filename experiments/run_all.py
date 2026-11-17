@@ -86,7 +86,7 @@ def main():
     for s, v in res["summary"].items():
         print(f"{s:10} addr {v['addr_acc']:.3f}  reply acc {v['reply_acc']:.3f} P {v['reply_precision']:.3f} "
               f"R {v['reply_recall']:.3f} F1 {v['reply_f1']:.3f}  ctx {v['context_acc']:.3f}  ans {v['answer_acc']:.3f}  "
-              f"leak {v['leak_n']}/{v['n_forbid']}")
+              f"private {v['private_leak_n']}/{v['n_private']}  stale {v['stale_n']}/{v['n_stale']}")
     print("dev:", {s: (round(v['reply_f1'], 3), round(v['answer_acc'], 3)) for s, v in res["dev_summary"].items()})
     print("tau dev F1:", res["tau_dev"])
     print("mcnemar:", res["mcnemar"])

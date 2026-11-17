@@ -79,7 +79,12 @@ def summary(rows) -> dict:
            "reply_acc": d["accuracy"], "reply_k": d["TP"] + d["TN"], **{f"reply_{k}": v for k, v in d.items() if k != "accuracy"},
            "context_acc": sum(r["context_ok"] for r in ev) / len(ev), "context_k": sum(r["context_ok"] for r in ev),
            "answer_acc": sum(r["answer_ok"] for r in ev) / len(ev), "answer_k": sum(r["answer_ok"] for r in ev),
-           "leak_n": sum(r["leak"] for r in priv), "n_forbid": len(priv)}
+           "leak_n": sum(r["leak"] for r in priv), "n_forbid": len(priv),
+           # раздельно: раскрытие закрытых сведений и ответы с устаревшей версией факта
+           "private_leak_n": sum(r["leak"] for r in priv if r["category"] == "private_info"),
+           "n_private": sum(r["category"] == "private_info" for r in priv),
+           "stale_n": sum(r["leak"] for r in priv if r["category"] == "fact_update"),
+           "n_stale": sum(r["category"] == "fact_update" for r in priv)}
     return out
 
 
